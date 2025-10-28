@@ -48,3 +48,85 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   
+
+
+
+   # prodev-mobile-setup
+
+## 📱 Objective
+Set up the first mobile application using the Expo Router template, and understand the file structure of a React Native app built with Expo.
+
+---
+
+## 🧩 Steps for Scaffolding
+
+1. Navigate to the project directory:
+   ```bash
+   cd prodev-mobile-setup
+   ```
+
+2. Initialize the Expo project:
+   ```bash
+   npx create-expo-app@latest .
+   ```
+
+3. Modify the Home Screen:
+   - Open `app/(tabs)/index.tsx`.
+   - Change:
+     ```tsx
+     <Text>Welcome!</Text>
+     ```
+     to
+     ```tsx
+     <Text>First App Created</Text>
+     ```
+
+4. Start and test the app:
+   ```bash
+   npx expo start
+   ```
+   - Scan the QR code with the Camera app (iOS) or Expo Go (Android).
+
+5. Reset the project:
+   ```bash
+   npm run reset-project
+   ```
+
+---
+
+## 🔍 Observations from `reset-project`
+
+Running `npm run reset-project`:
+- Cleared the build cache.
+- Removed temporary and configuration files.
+- Restored the project to its original initialized state.
+- Ensured no old build artifacts interfere with fresh runs.
+
+---
+
+## 📁 Project Structure Overview
+
+```
+prodev-mobile-app-0x00/
+│
+├── app/
+│   ├── (tabs)/
+│   │   └── index.tsx      # Home screen
+│   ├── _layout.tsx        # Router layout
+│
+├── constants/
+│   └── Colors.tsx         # Color definitions
+│
+├── package.json
+├── README.md
+└── App.tsx
+```
+
+---
+
+## 🧠 Summary
+
+- Expo Router simplifies navigation structure.
+- The `reset-project` command is useful for clearing cached builds.
+- The project can be previewed instantly using the Expo Go app.
