@@ -17,7 +17,7 @@ export default function Index() {
           Enter your email and password to sign in.
         </Text>
 
-        <View style={styles.formGroup}>
+        <View style={styles.formerGroup}>
           <View>
             <Text style={styles.placeholderText}>Email</Text>
             <TextInput keyboardType="email-address" style={styles.inputField} />
