@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderColor: '#7e7b7b',
   },
-  formerGroup: {
+  formGroup: {
     marginTop: 44,
   },
   forgotPasswordText: {
